@@ -176,16 +176,6 @@ export default class LinkedList {
   }
 
   /**
-   * @param {*[]} values - Array of values that need to be converted to linked list.
-   * @return {LinkedList}
-   */
-  fromArray(values) {
-    values.forEach(value => this.append(value));
-
-    return this;
-  }
-
-  /**
    * @return {LinkedListNode[]}
    */
   toArray() {
@@ -198,6 +188,16 @@ export default class LinkedList {
     }
 
     return nodes;
+  }
+
+  /**
+   * @param {*[]} values - Array of values that need to be converted to linked list.
+   * @return {LinkedList}
+   */
+  fromArray(values) {
+    values.forEach(value => this.append(value));
+
+    return this;
   }
 
   /**

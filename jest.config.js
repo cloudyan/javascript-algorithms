@@ -13,10 +13,12 @@ module.exports = {
   coverageDirectory: './coverage/',
 
   // If the test path matches any of the patterns, it will be skipped.
+  // https://jestjs.io/docs/zh-Hans/configuration#testpathignorepatterns-%E6%95%B0%E7%BB%84-string
   testPathIgnorePatterns: [
     '<rootDir>/node_modules/',
     '<rootDir>/examples/',
     '<rootDir>/temp/',
+    // '<rootDir>/**/tempCodeRunnerFile.js',
   ],
 
   // If the file path matches any of the patterns, coverage information will be skipped.

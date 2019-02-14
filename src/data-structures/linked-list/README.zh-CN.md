@@ -12,6 +12,10 @@
 
 ## 基本操作的伪代码
 
+[伪代码格式](https://blog.csdn.net/ssisse/article/details/51501797)
+
+- 赋值用箭头“←”
+
 ### 插入
 
 ```text
@@ -29,7 +33,7 @@ Add(value)
 end Add
 ```
 
-```
+```text
 Prepend(value)
  Pre: value is the value to add to the list
  Post: value has been placed at the head of the list
@@ -59,7 +63,7 @@ Contains(head, value)
   return true
 end Contains
 ```
-    
+
 ### 删除
 
 ```text
@@ -107,7 +111,7 @@ Traverse(head)
   end while
 end Traverse
 ```
-    
+
 ### 反向遍历
 
 ```text
