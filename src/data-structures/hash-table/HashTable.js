@@ -35,6 +35,7 @@ export default class HashTable {
     //
     // where charCodeAt(i) is the i-th character code of the key, n is the length of the key and
     // PRIME is just any prime number like 31.
+    // 求和取余
     const hash = Array.from(key).reduce(
       (hashAccumulator, keySymbol) => (hashAccumulator + keySymbol.charCodeAt(0)),
       0,

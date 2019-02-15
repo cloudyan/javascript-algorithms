@@ -4,10 +4,17 @@
 
 队列基本操作有两种: 向队列的后端位置添加实体，称为入队，并从队列的前端位置移除实体，称为出队。
 
-
 队列中元素先进先出 FIFO (first in, first out)的示意
 
 ![Queue](https://upload.wikimedia.org/wikipedia/commons/5/52/Data_Queue.svg)
+
+## 基本操作
+
+- peek 读取队首 value
+- enqueue 队尾入队
+- dequeue 队首出队
+- toString
+- isEmpty
 
 ## 参考
 

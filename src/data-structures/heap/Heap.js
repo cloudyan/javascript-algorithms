@@ -2,6 +2,7 @@ import Comparator from '../../utils/comparator/Comparator';
 
 /**
  * Parent class for Min and Max Heaps.
+ * 这里的堆实际上是二叉堆(Binary Heap)，其实也可定义k叉堆。
  */
 export default class Heap {
   /**
@@ -36,7 +37,7 @@ export default class Heap {
 
   /**
    * @param {number} childIndex
-   * @return {number}
+   * @return {number} 向下取整
    */
   getParentIndex(childIndex) {
     return Math.floor((childIndex - 1) / 2);
@@ -67,6 +68,14 @@ export default class Heap {
   }
 
   /**
+   * @param {number} childIndex
+   * @return {*}
+   */
+  parent(childIndex) {
+    return this.heapContainer[this.getParentIndex(childIndex)];
+  }
+
+  /**
    * @param {number} parentIndex
    * @return {*}
    */
@@ -80,14 +89,6 @@ export default class Heap {
    */
   rightChild(parentIndex) {
     return this.heapContainer[this.getRightChildIndex(parentIndex)];
-  }
-
-  /**
-   * @param {number} childIndex
-   * @return {*}
-   */
-  parent(childIndex) {
-    return this.heapContainer[this.getParentIndex(childIndex)];
   }
 
   /**

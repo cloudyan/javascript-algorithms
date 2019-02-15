@@ -2,8 +2,8 @@
 
 在计算机科学中, 一个 **栈(stack)** 是一种抽象数据类型,用作表示元素的集合,具有两种主要操作:
 
-* **push**, 添加元素到栈的顶端(末尾);
-* **pop**, 移除栈最顶端(末尾)的元素.
+- **push**, 添加元素到栈的顶端(末尾);
+- **pop**, 移除栈最顶端(末尾)的元素.
 
 以上两种操作可以简单概括为“后进先出(LIFO = last in, first out)”。
 
@@ -14,6 +14,16 @@
 栈的 push 和 pop 操作的示意
 
 ![Stack](https://upload.wikimedia.org/wikipedia/commons/b/b4/Lifo_stack.png)
+
+## 基本操作
+
+- push
+- pop
+- peek
+- 辅助
+  - isEmpty
+  - toArray
+  - toString
 
 ## 参考
 

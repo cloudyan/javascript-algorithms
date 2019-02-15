@@ -10,6 +10,26 @@
 
 ![Linked List](https://upload.wikimedia.org/wikipedia/commons/6/6d/Singly-linked-list.svg)
 
+## 基本操作
+
+- 插入
+  - prepend
+  - append
+- 搜索
+  - find
+- 删除
+  - delete
+  - deleteHead
+  - deleteTail
+- 辅助
+  - toArray
+  - fromArray
+  - toString
+  - reverse
+- 其他
+  - 遍历
+  - 反向遍历
+
 ## 基本操作的伪代码
 
 [伪代码格式](https://blog.csdn.net/ssisse/article/details/51501797)
@@ -128,7 +148,7 @@ ReverseTraversal(head, tail)
       yield curr.value
       curr ← prev
     end while
-   yeild curr.value
+  yeild curr.value
   end if
 end ReverseTraversal
 ```
