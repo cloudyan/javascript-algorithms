@@ -1,5 +1,15 @@
 # Bit Manipulation
 
+Bit 操控
+
+- set
+- get
+- update
+- clear
+- 乘
+- 除
+- 变负
+
 #### Get Bit
 
 This method shifts the relevant bit to the zeroth position.
@@ -53,7 +63,7 @@ isEven: true
 
 #### isPositive
 
-This method determines if the number is positive. It is based on the fact that all positive 
+This method determines if the number is positive. It is based on the fact that all positive
 numbers have their leftmost bit to be set to `0`. However, if the number provided is zero
 or negative zero, it should still return `false`.
 

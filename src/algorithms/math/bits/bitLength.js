@@ -1,5 +1,6 @@
 /**
  * Return the number of bits used in the binary representation of the number.
+ * or number.toString(2).length
  *
  * @param {number} number
  * @return {number}
