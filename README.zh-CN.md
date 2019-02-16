@@ -1,11 +1,5 @@
 # JavaScript 算法与数据结构
 
-TypeScript 版本
-
-参考
-
-- https://github.com/loiane/javascript-datastructures-algorithms
-
 [![build status](https://travis-ci.org/trekhleb/javascript-algorithms.svg?branch=master)](https://travis-ci.org/trekhleb/javascript-algorithms)
 [![codecov](https://codecov.io/gh/trekhleb/javascript-algorithms/branch/master/graph/badge.svg)](https://codecov.io/gh/trekhleb/javascript-algorithms)
 
@@ -289,3 +283,16 @@ npm test -- 'playground'
 | **希尔排序**          | n log(n)  | 取决于差距序列   | n (log(n))^2  | 1         | No        |  |
 | **计数排序**          | n + r     | n + r     | n + r         | n + r     | Yes       | r - 数组里最大的数    |
 | **基数排序**          | n * k     | n * k     | n * k         | n + k     | Yes       | k - 最长 key 的升序   |
+
+## 扩展学习
+
+* TypeScript 版本
+* 算法可视化
+
+参考资料
+
+* https://github.com/loiane/javascript-datastructures-algorithms
+* https://visualgo.net/zh
+* https://coolshell.cn/articles/4671.html
+  * https://www.cs.usfca.edu/~galles/visualization/Algorithms.html
+  * https://www.cs.usfca.edu/~galles/visualization/source.html
