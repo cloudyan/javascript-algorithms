@@ -51,3 +51,4 @@ end Hash
 
 - [Wikipedia](https://en.wikipedia.org/wiki/Hash_table)
 - [YouTube](https://www.youtube.com/watch?v=shs0KM3wKv8&index=4&list=PLLXdhg_r2hKA7DPDsunoDZ-Z769jWn4R8)
+- [LinkedHashMap、HashMap比较](https://www.jianshu.com/p/979bc680b79f)

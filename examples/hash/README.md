@@ -32,3 +32,6 @@ HASH 主要用于信息安全领域中加密算法，它把一些不同长度的
 - [MD5](https://baike.baidu.com/item/MD5)
 - [SHA家族](https://baike.baidu.com/item/SHA%E5%AE%B6%E6%97%8F/9849595)
 - [npm: md5](https://www.npmjs.com/package/md5)
+- [常见hash算法的原理](http://www.cnblogs.com/zhoug2020/p/6984191.html)
+- [转 从头到尾彻底解析Hash表算法](https://www.cnblogs.com/dancheblog/p/3512284.html)
+- [Hash 函数的常用算法和应用领域](http://www.cnblogs.com/qianxun/archive/2011/07/03/2096773.html)

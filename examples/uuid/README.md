@@ -11,9 +11,26 @@ GUID（Globals Unique Identifiers 全局统一标识符）是微软对UUID这个
 
 世界上的任何两台计算机都不会生成重复的 GUID 值。GUID 主要用于在拥有多个节点、多台计算机的网络或系统中，分配必须具有唯一性的标识符。在 Windows 平台上，GUID 应用非常广泛：注册表、类及接口标识、数据库、甚至自动生成的机器名、目录名等。一个GUID可以在后台数据库中操作一个主键。
 
+## 适用于分布式唯一标识码的生成算法有哪些？
+
+- 利用数据库生成
+- 利用Redis/MongoDB/zookeeper生成
+- UUID
+  - UUID有基于MAC地址的，加上时间和时钟序列的，也有基于伪随机数的，基于加密哈希的。
+- Twitter的snowflake算法
+  - Twitter开源，基于zk，41位时间戳（毫秒数）+10位机器的ID+12位毫秒内的流水号+1位符号位（永远是0）。
+  - 优点：性能不错，单机内递增。
+  - 缺点：依赖zk；依赖于机器时钟，分布式环境内可能会不是全局递增。
+- 百度 UidGenerator
+  - UidGenerator是百度开源的分布式ID生成器，基于于snowflake算法的实现，看起来感觉还行。不过，国内开源的项目维护性真是担忧。
+- 美团 Leaf
+  - Leaf 是美团开源的分布式ID生成器，能保证全局唯一性、趋势递增、单调递增、信息安全，里面也提到了几种分布式方案的对比，但也需要依赖关系数据库、Zookeeper等中间件。
+
 参考资料：
 
 - https://blog.csdn.net/forlong401/article/details/7580147
 - https://blog.csdn.net/yuanlianming663/article/details/1842267
 - https://www.cnblogs.com/pangguoming/p/7090906.html
 - http://www.cnblogs.com/snandy/p/3261754.html
+- https://m.zjurl.cn/answer/6640244087003808014/?iid=59688834959
+- https://tech.meituan.com/2017/04/21/mt-leaf.html
