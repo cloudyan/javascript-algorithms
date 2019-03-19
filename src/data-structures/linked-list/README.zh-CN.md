@@ -159,9 +159,12 @@ end ReverseTraversal
 
 | Access    | Search    | Insertion | Deletion  |
 | :-------: | :-------: | :-------: | :-------: |
-| O(n)      | O(n)      | O(1)      | O(1)      |
+| O(n)      | O(n)      | O(1)      | O(n)      |
 
+::: TIP :::
 这里删除的时间复杂度怎么会是 O(1) 呢，这里明明需要遍历，应该是O(n)
+
+另外，这里的 Insertion 也不明确，是最后 append 操作还是中间插入呢
 
 如果已知需要删除的**节点**，那么可以使用以下方法优化到 O(1)
 
