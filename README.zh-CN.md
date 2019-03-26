@@ -65,6 +65,7 @@ _Read this in other languages:_
   * `B` [弧度和角](src/algorithms/math/radian) - 弧度与角的相互转换
   * `B` [快速算次方](src/algorithms/math/fast-powering)
   * `A` [整数拆分](src/algorithms/math/integer-partition)
+  * `A` [平方根](src/algorithms/math/square-root) - 牛顿的方法
   * `A` [割圆术](src/algorithms/math/liu-hui) - 基于 N-gons 的近似 π 计算
   * `A` [离散傅里叶变换](src/algorithms/math/fourier-transform) - 把时间信号解析成构成它的频率
 * **集合**
@@ -103,8 +104,8 @@ _Read this in other languages:_
   * `B` [计数排序](src/algorithms/sorting/counting-sort)
   * `B` [基数排序](src/algorithms/sorting/radix-sort)
 * **链表**
-  - `B` [正向遍历](src/algorithms/linked-list/traversal)
-  - `B` [反向遍历](src/algorithms/linked-list/reverse-traversal)
+  * `B` [正向遍历](src/algorithms/linked-list/traversal)
+  * `B` [反向遍历](src/algorithms/linked-list/reverse-traversal)
 * **树**
   * `B` [深度优先搜索](src/algorithms/tree/depth-first-search) (DFS)
   * `B` [广度优先搜索](src/algorithms/tree/breadth-first-search) (BFS)
@@ -196,7 +197,8 @@ _Read this in other languages:_
 ## 如何使用本仓库
 
 **安装依赖**
-```
+
+```bash
 npm install
 ```
 
@@ -204,18 +206,19 @@ npm install
 
 检查代码质量
 
-```
+```bash
 npm run lint
 ```
 
 **执行测试**
 
-```
+```bash
 npm test
 ```
 
 **按照名称执行测试**
-```
+
+```bash
 npm test -- 'LinkedList'
 ```
 
@@ -225,7 +228,7 @@ npm test -- 'LinkedList'
 
 然后，只需运行以下命令来测试你的 Playground 是否按无误:
 
-```
+```bash
 npm test -- 'playground'
 ```
 
