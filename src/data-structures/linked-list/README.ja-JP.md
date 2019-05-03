@@ -1,28 +1,12 @@
-# Lista Encadeada (Linked List)
+# リンクリスト
 
-Na ciência da computação, uma **lista encadeada** é uma coleção linear de
-elementos de dado, em que a ordem linear não é dada por sua locação
-física na memória. Em vez disso, cada elemento aponta para o próximo.
-É uma estrutura de dados consistindo em um grupo de nós
-que juntos representam uma sequência. Sob a forma mais simples,
-cada nó é composto de dados e uma referência (em outras palavras,
-uma ligação/conexão) para o próximo nó na sequência. Esta estrutua
-permite uma eficiente inserção e remoção de elementos de qualquer
-posição na sequência durante a iteração.
-
-Variantes mais complexas adicionam ligações adicionais, permitindo
-uma inserção ou remoção mais eficiente a partir de referências
-de elementos arbitrárias. Uma desvantagem das listas vinculadas
-é que o tempo de acesso é linear (e difícil de inserir em uma
-pipeline). Acessos mais rápidos, como acesso aleatório, não é viável.
-Arrays possuem uma melhor localização de cache em comparação
-com lista encadeada (linked list).
+コンピュータサイエンスにおいて、**リンクリスト**はデータ要素の線形コレクションです。要素の順番はメモリ内の物理的な配置によっては決まりません。代わりに、各要素が次の要素を指しています。リンクリストはノードのグループからなるデータ構造です。最も単純な形式では、各ノードはデータとシーケンス内における次のノードへの参照(つまり、リンク)で構成されています。この構造はイテレーションにおいて任意の位置へ要素を効率的に挿入、削除することを可能にしています。より複雑なリンクリストではリンクをさらに追加することで、任意の要素の参照から要素を効率的に挿入、削除することを可能にしています。リンクリストの欠点はアクセスタイムが線形である(そして、パイプライン処理が難しい)ことです。ランダムアクセスのような高速なアクセスは実現不可能です。配列の方がリンクリストと比較して参照の局所性が優れています。
 
 ![Linked List](https://upload.wikimedia.org/wikipedia/commons/6/6d/Singly-linked-list.svg)
 
-## Pseudo código para Operações Básicas
+## 基本操作の擬似コード
 
-### Inserção
+### 挿入
 
 ```text
 Add(value)
@@ -52,7 +36,7 @@ Prepend(value)
 end Prepend
 ```
 
-### Pesquisa
+### 検索
 
 ```text
 Contains(head, value)
@@ -69,8 +53,8 @@ Contains(head, value)
   return true
 end Contains
 ```
-
-### Remoção
+    
+### 削除
 
 ```text
 Remove(head, value)
@@ -104,7 +88,7 @@ Remove(head, value)
 end Remove
 ```
 
-### Travessia
+### トラバース
 
 ```text
 Traverse(head)
@@ -118,7 +102,7 @@ Traverse(head)
 end Traverse
 ```
 
-### Travessia Reversa
+### 逆トラバース
 
 ```text
 ReverseTraversal(head, tail)
@@ -139,19 +123,19 @@ ReverseTraversal(head, tail)
 end ReverseTraversal
 ```
 
-## Complexidades
+## 計算量
 
-### Complexidade de Tempo
+### 時間計算量
 
-| Acesso | Pesquisa | Inserção | Remoção |
-| :----: | :------: | :------: | :-----: |
-|  O(n)  |  O(n)    |  O(1)    |  O(n)   |
+| Access    | Search    | Insertion | Deletion  |
+| :-------: | :-------: | :-------: | :-------: |
+| O(n)      | O(n)      | O(1)      | O(n)      |
 
-### Complexidade de Espaçø
+### 空間計算量
 
 O(n)
 
-## Referências
+## 参考
 
 - [Wikipedia](https://en.wikipedia.org/wiki/Linked_list)
 - [YouTube](https://www.youtube.com/watch?v=njTh_OwMljA&index=2&t=1s&list=PLLXdhg_r2hKA7DPDsunoDZ-Z769jWn4R8)
